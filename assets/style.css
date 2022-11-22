@@ -25,8 +25,9 @@ html{
     --yellow:rgb(213, 230, 63);
     --red:rgb(223, 11, 11);
 }
+
 .header {
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 10;
     background-color: #00000063;
@@ -47,7 +48,6 @@ html{
     display: flex;
 }
 .navbar-ul{
-   
     gap: 15px;
     display: flex;
 }
@@ -56,7 +56,7 @@ html{
     letter-spacing: 2px;
     color: aliceblue;
     font-size: 1.2em;
-    transition: ease-in-out 0.8s;
+    transition: ease-in-out 0.2s;
     
 }
 .navbar-ul li a:hover{
@@ -65,17 +65,20 @@ html{
     background-clip: text;
     -webkit-background-clip: text;
     font-weight: 700;
-   transform: scale(1.2);
+    font-size: 30px;
+    transition: 0.2s;
 }
 .navbar-ul li a::before{
 content: '';
 position: absolute;
 top: 0;
-transform: skewY(208deg);
-transition: width 2s;
+transform: skew(208deg);
+transition: all 0.8s;
+/* transform: scaleX(0);
+  transform-origin: bottom right; */
 }
 .navbar-ul li a:hover::before{
-    width: 100%;
+   width:100%
 }
 #check, .checkbutton{
     display: none;
@@ -83,7 +86,9 @@ transition: width 2s;
 .hero{
     width: 90%;
     height: auto;
-    margin: 100px;
+    gap: 30px;
+    padding: 70px 0;
+    margin: 40px auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -104,11 +109,14 @@ transition: width 2s;
 }
 
 .second-disney{
-    padding: 20px;
+    padding: 60px 10px;
+    gap: 10px;
     background-color: rgba(0, 0, 0, 0.034);
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
+    font-size: 1.2em;
 }
 .second-disney a{
     color: white;
@@ -134,9 +142,10 @@ transition: width 2s;
 }
 .movies-card{
     display: block;
+    padding: 60px;
 }
 .movies-card h2{
-    padding: 20px;
+    padding: 0 0 30px 0;
 }
 .movies-container{
     width: 100%;
@@ -180,4 +189,68 @@ transition: width 2s;
     background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     transition: 0.5s ease;
+}
+.contact-us {
+    width: 100%;
+    background-color: var(--green);
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.contact-us h2{
+    font-size: 1.4rem;
+    letter-spacing: 0.4em;
+    padding: 30px;
+    text-align: center;
+}
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.9em; 
+    letter-spacing: 0.2em;
+    gap:10px;
+}
+.contact-content i{
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    color: #fdfdfb;
+}
+.contact-redes{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.contact-redes i{
+    font-size: 2em;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    padding: .5em;
+    text-align: center;
+    letter-spacing: 0;
+}
+.contact-redes i:hover{
+    color: yellow;
+    background-color: var(--red);
+    box-shadow: 0 0 20px 2px var(--yellow);
+}
+.footer-container{
+    background-color: var(--gray);
+    color: var(--black);
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+.footer-list{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.footer-list li a{
+     color: var(--red);
 }

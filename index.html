@@ -13,39 +13,39 @@
 </head>
 <body>
     <header class="header">
-        <img  class="img-nav" src="./assets/Marvel-Comics-logo.png" alt="Logo">
-        <nav class="navbar">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbutton">
-              <i class="fa-solid fa-bars"></i>
-            </label>
-            <ul class="navbar-ul">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+            <img  class="img-nav" src="./assets/Marvel-Comics-logo.png" alt="Logo">
+            <nav class="navbar">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbutton">
+                <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="navbar-ul">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#stream">stream</a></li>
+                    <li><a href="#pelis">Películas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
     </header>
     <main>
-        <section class="hero">
-            <div class="hero-container">
-                <h1>Marvel movies</h1>
-                <p>Journey into the cosmic depths of the mighty Marvel Cinematic Universe!</p>
-            </div>
-            <div class="hero-img"></div>
-        </section>
-        <section class="second-disney">
-            <img src="./assets/Disney_Plus_logo.webp" alt="Logo-disney">
-            <div>
-                <h3>A universe of super heroes</h3>
-                <p>All your favorite stories and more</p>
-            </div>  
-            <a href="https://www.disneyplus.com/brand/marvel?cid=DTCI-Synergy-Marvel-Site-Acquisition-Library-US-Marvel-MultiCharacter-EN-HomeScreenHero-MAS4Movies_ETRSHCBLW-NA" target="_blank" rel="noopener noreferrer">stream now</a>
-        </section>
+            <section class="hero" id="inicio">
+                <div class="hero-container">
+                    <h1>Marvel movies</h1>
+                    <p>Viaja a las profundidades cósmicas del poderoso Universo Cinemátografico de Marvel.</p>
+                </div>
+                <div class="hero-img"></div>
+            </section>
+            <section class="second-disney" id="stream">
+                <img src="./assets/Disney_Plus_logo.webp" alt="Logo-disney">
+                <div>
+                    <h3>Un Universo de superhéroes</h3>
+                    <p>Todas tus historias favoritas y mas, en un sólo lugar. Miralas ahora!</p>
+                </div>  
+                <a href="https://www.disneyplus.com/brand/marvel?cid=DTCI-Synergy-Marvel-Site-Acquisition-Library-US-Marvel-MultiCharacter-EN-HomeScreenHero-MAS4Movies_ETRSHCBLW-NA" target="_blank" rel="noopener noreferrer">stream now</a>
+            </section>
         <div class="img-content"></div>
-        <section class="movies-card">
-            <h2>Movies</h2>
+        <section class="movies-card" id="pelis">
+            <h2>Películas</h2>
             <div class="movies-container">
             <div class="card">
                 <img src="./assets/blackpantherwakandaforever_lob_crd_05.jpg" alt="Wakanda">
@@ -110,9 +110,85 @@
                     <p>2019</p>
                 </div>
             </div>
-            
+            <div class="card">
+                <img src="./assets/ant-manthewasp_lob_crd_01.jpg" alt="Wakanda">
+                <div class="details">
+                    <h3>Ant-Man and The Wasp</h3>
+                    <p>2018</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/avengersinfinitywar_lob_crd_02_1.jpg" alt="Wakanda">
+                <div class="details">
+                    <h3>Avengers: Infinity War</h3>
+                    <p>2018</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/captainmarvel_lob_crd_06.jpg" alt="Wakanda">
+                <div class="details">
+                    <h3>Capitain Marvel</h3>
+                    <p>2018</p>
+                </div>
+            </div>
+        </div>
         </section>
-
+        <section class="contact-us" id="contacto">
+            <h2>contacto</h2>
+            <div class="contact-container">
+                <div class="contact-content">
+                  <h3>Sede corporativa</h3>
+                  <ul>
+                    <li>
+                      <i class="fa-thin fa-inbox"></i>
+                      mail@mcu.com
+                    </li>
+                    <li>
+                      <i class="fa-thin fa-location-dot"></i>
+                      Av. de las Americas 1290, NY.
+                    </li>
+                    <li>
+                      <i class="fa-thin fa-headset"></i>
+                      212-576-4000
+                    </li>
+                  </ul>
+                 </div>
+                 <div class="contact-content">
+                  <h3>Suscripciones</h3>
+                  <ul>
+                    <li>
+                      <i class="fa-thin fa-inbox"></i>
+                      marvelsubs@mcucomics.com
+                    </li>
+                    <li>
+                      <i class="fa-thin fa-location-dot"></i>
+                      PO Box 727, NY.
+                    </li>
+                    <li>
+                      <i class="fa-thin fa-headset"></i>
+                      888-511-5480
+                    </li>
+                  </ul>
+                 </div>
+                  <div class="contact-redes">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+              </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="section-container footer-container">
+          <h4>Copyright Geraldina Guevara</h4>
+          <div class="footer">
+            <ul class="footer-list">
+              <li><a href="#"> Ayuda</a></li>
+              <li><a href="#">Privacidad</a></li>
+              <li><a href="#">Condiciones</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>
