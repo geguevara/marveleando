@@ -110,10 +110,11 @@ transition: all 0.8s;
 
 .second-disney{
     padding: 60px 10px;
-    gap: 10px;
+    gap: 10%;
     background-color: rgba(0, 0, 0, 0.034);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-items: center;
     flex-wrap: wrap;
     align-items: center;
     font-size: 1.2em;
@@ -142,7 +143,7 @@ transition: all 0.8s;
 }
 .movies-card{
     display: block;
-    padding: 60px;
+    padding: 5%;
 }
 .movies-card h2{
     padding: 0 0 30px 0;
@@ -207,10 +208,14 @@ transition: all 0.8s;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 0.9em; 
     letter-spacing: 0.2em;
-    gap:10px;
+    gap:10%;
+    
+}
+.contact-content{
+    padding: 0 30px 20px 30px;
 }
 .contact-content i{
     font-weight: 900;
@@ -220,16 +225,19 @@ transition: all 0.8s;
 .contact-redes{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    align-content: center;
+    /* gap: 8% */
 }
 .contact-redes i{
-    font-size: 2em;
+    font-size: 2rem;
     border-radius: 50%;
     background-color: red;
     color: white;
-    padding: .5em;
+    padding: 1rem;
     text-align: center;
     letter-spacing: 0;
+    margin: 20px;
 }
 .contact-redes i:hover{
     color: yellow;
@@ -253,4 +261,62 @@ transition: all 0.8s;
 }
 .footer-list li a{
      color: var(--red);
+}
+@media (max-width:850px){
+    /* .header{
+        padding: 0 5%;
+    } */
+
+    .checkbutton{
+        display: block;
+       /*  position: relative;
+        left: 10px;
+        color: #e6bc8c; */
+    }
+    .checkbutton:hover{
+        color: yellow;
+        font-size: 1.3em;
+        transition: all 0.3s;
+    }
+    .navbar-ul{
+        width: 50%;
+        /* height: calc(100vh - 100px); */
+        position: absolute;
+        background-color: var(--red);
+        flex-direction: column;
+        top: 60px;
+        right: 0;
+        gap: 30px;
+        padding: 20px;
+        z-index: 10;
+        display: none;
+    }
+    #check:checked + .navbar-ul{
+        display: flex;
+    }
+    .hero-img{
+        display: none;
+    }
+    .hero-container{
+        text-align: center;
+    }
+    .second-disney a{
+        margin: 20px;
+    }
+    .contact-redes{
+        gap: 10%;
+    }
+    .contact-content{
+        font-size: 0.7em;
+    }
+    .contact-container{
+        gap: 10px; 
+    }
+    
+}
+@media(max-width:635px){
+    .contact-container{
+        flex-direction:column ;
+        text-align: center;
+    } 
 }
